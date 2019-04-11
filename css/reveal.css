@@ -1762,6 +1762,13 @@ tr:not(.highlight-line) {
   .jrdev-wrap.into-the-fade {
     opacity: 0.25; }
 
+.beer-and-pong img {
+  position: absolute;
+  max-height: 400px !important; }
+
+.beer-and-pong .pingpong {
+  left: 0; }
+
 .mug-wrap {
   padding-top: 50px;
   position: relative; }

@@ -1918,6 +1918,17 @@ $twitter: #00acee;
   }
 }
 
+.beer-and-pong {
+  img {
+    position: absolute;
+    max-height: 400px !important;
+  }
+
+  .pingpong {
+    left: 0;
+  }
+}
+
 //cup
 
 .mug-wrap {
@@ -1931,6 +1942,7 @@ $twitter: #00acee;
     border: 10px solid white;
     border-radius: 0 0 15% 15%;
     margin: 0 95%;
+
     &:after {
       content: "";
       height: 50%;

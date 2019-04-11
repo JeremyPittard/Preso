@@ -64,7 +64,32 @@
             <div class="mug"></div>
           </div>
         </section>
-        <section class="crazy-ones"></section>
+        <section>
+          <p>I would like to clear something up...</p>
+        </section>
+        <section class="beer-and-pong">
+          <img
+            src="/pingpong.jpg"
+            alt="pinging pong"
+            class="fragment fade-down pingpong"
+            data-transition-speed="slow"
+          />
+          <img
+            src="/beer.jpg"
+            alt="beer!"
+            class="fragment beer fade-down"
+            data-transition-speed="slow"
+          />
+        </section>
+        <section class="all-the-time">
+          <p>Does not happen all the time</p>
+          <p class="fragment" data-fragment-index="1">we also drink coffee</p>
+          <div class="mug-wrap fragment" data-fragment-index="1">
+            <div class="steam"></div>
+            <div class="mug"></div>
+          </div>
+        </section>
+        <section></section>
       </div>
     </div>
 
@@ -79,7 +104,7 @@
         dependencies: [
           { src: "plugin/markdown/marked.js" },
           { src: "plugin/markdown/markdown.js" },
-          { src: "plugin/zoom-js/zoom.js", async: true},
+          { src: "plugin/zoom-js/zoom.js", async: true },
           { src: "plugin/notes/notes.js", async: true },
           { src: "plugin/highlight/highlight.js", async: true }
         ]

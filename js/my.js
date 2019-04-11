@@ -14,3 +14,9 @@ function fadeTopItems() {
     }
   });
 }
+
+function firing() {
+  $(document).on("change", function() {
+    alert("change");
+  });
+}
