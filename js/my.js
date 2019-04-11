@@ -3,7 +3,7 @@ firing();
 function fadeTopItems() {
   var Opaque = false;
   $(document).on("click", function() {
-    if (Opaque === false) {
+    if (Opaque === false && !$(".final-slide").hasClass("present")) {
       $(".twitter-wrap").addClass("into-the-fade");
       $(".say-my-name").addClass("into-the-fade");
       $(".jrdev-wrap").addClass("into-the-fade");
@@ -13,6 +13,7 @@ function fadeTopItems() {
       $(".twitter-wrap").removeClass("into-the-fade");
       $(".say-my-name").removeClass("into-the-fade");
       $(".jrdev-wrap").removeClass("into-the-fade");
+      Opaque = false;
     } else {
       return;
     }
