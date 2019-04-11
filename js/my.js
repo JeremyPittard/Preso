@@ -1,5 +1,5 @@
 fadeTopItems();
-
+firing();
 function fadeTopItems() {
   var Opaque = false;
   $(document).on("click", function() {
@@ -9,14 +9,12 @@ function fadeTopItems() {
       $(".jrdev-wrap").addClass("into-the-fade");
 
       Opaque = true;
+    } else if ($(".final-slide").hasClass("present")) {
+      $(".twitter-wrap").removeClass("into-the-fade");
+      $(".say-my-name").removeClass("into-the-fade");
+      $(".jrdev-wrap").removeClass("into-the-fade");
     } else {
       return;
     }
-  });
-}
-
-function firing() {
-  $(document).on("change", function() {
-    alert("change");
   });
 }
