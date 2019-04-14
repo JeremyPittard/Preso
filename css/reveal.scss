@@ -1843,7 +1843,9 @@ $notesWidthPercent: 25%;
   visibility: hidden;
 }
 
-// My styles
+/******************************************************************************************************
+ * My Styles
+ *****************************************************************************************************/
 
 /*********************************************
  * My Variables
@@ -1851,10 +1853,31 @@ $notesWidthPercent: 25%;
 
 $text: #16c18f;
 $twitter: #00acee;
+$pre: #272822;
+$yellow: #fbc02d;
+$red: #ff5252;
+$blood-red: #aa2233;
+$lilac: #ea80fc;
+$pink: #ff736a;
+$blue: #4d9bb1;
+$imperialblue: #02097b;
+$olive: #636f57;
+$background: #313340;
 
 /*********************************************
    * My Styles
-   *********************************************/
+  *********************************************/
+
+pre {
+  background: #272822 !important;
+  code {
+    overflow-y: visible !important;
+  }
+}
+
+.coffee {
+  color: $text !important ;
+}
 
 .twitter-wrap {
   position: absolute;
@@ -1864,6 +1887,7 @@ $twitter: #00acee;
   top: 15px;
   width: 95%;
   font-family: "Montserrat", Helvetica, sans-serif;
+  z-index: 999;
 
   font-size: 20px;
   color: white;
@@ -1918,18 +1942,223 @@ $twitter: #00acee;
   }
 }
 
-.beer-and-pong {
-  img {
-    position: absolute;
-    max-height: 400px !important;
-  }
+.people-wrap {
+  padding-top: 50px;
+  svg {
+    height: 120px;
+    width: 120px;
 
-  .pingpong {
-    left: 0;
+    &.pink {
+      fill: $pink;
+    }
+    &.green {
+      fill: $text;
+    }
+    &.yellow {
+      fill: $yellow;
+    }
+    &.red {
+      fill: $red;
+    }
+    &.purple {
+      fill: $lilac;
+    }
   }
 }
 
-//cup
+.person {
+  h3 {
+    width: 100%;
+    text-align: left;
+  }
+
+  svg {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    right: -100px;
+    top: -40px;
+    &.dev {
+      fill: $background;
+    }
+
+    &.design {
+      fill: $blood-red;
+    }
+
+    &.a-ms {
+      fill: $yellow;
+      top: 0;
+    }
+
+    &.management {
+      fill: #eee;
+    }
+
+    &.ddm {
+      fill: $imperialblue;
+      top: 0;
+    }
+
+    &.bulby {
+      fill: $background;
+    }
+  }
+}
+
+.the-day {
+  svg {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    right: -100px;
+    top: -40px;
+    fill: $background;
+    stroke: $text;
+
+    &.red {
+      fill: $blood-red;
+      stroke: $blue;
+    }
+
+    &.yellow {
+      stroke: none;
+      fill: $yellow;
+    }
+
+    &.white {
+      stroke: #eee;
+      fill: $pink;
+      top: 30px;
+    }
+
+    &.blue {
+      stroke: none;
+      fill: $imperialblue;
+    }
+
+    &.afternoon {
+      stroke: $background;
+      fill: $olive;
+      transform: scale(-1, 1);
+    }
+    .beer {
+      fill: $background;
+      stroke: none;
+      top: 30px;
+    }
+  }
+
+  .circle-wrap {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .day-circle {
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      margin: 0 10px;
+
+      &.red {
+        background: $red;
+      }
+
+      &.yellow {
+        background: $yellow;
+      }
+
+      &.green {
+        background: $text;
+      }
+    }
+  }
+
+  h3,
+  h2,
+  p {
+    text-align: left;
+
+    &.center {
+      text-align: center;
+    }
+  }
+}
+
+.the-wrap {
+  .wrap-title {
+    margin-bottom: 50px;
+  }
+  .mug {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background: $text;
+    border: 10px solid white;
+    border-radius: 0 0 15% 15%;
+    display: inline-block;
+
+    &:after {
+      content: "";
+      height: 50%;
+      width: 100%;
+      border-radius: 0 15% 15% 0;
+      background: transparent;
+      border: 10px solid white;
+      position: absolute;
+      right: -50px;
+      z-index: -1;
+    }
+  }
+
+  .wrap-person {
+    height: 120px;
+    width: 120px;
+    fill: $yellow;
+    margin: 0 50px;
+  }
+
+  .day-circle {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background: $red;
+    display: inline-block;
+  }
+
+  .wrap {
+    h3 {
+      width: 100%;
+      text-align: left;
+    }
+
+    svg {
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      right: -100px;
+      top: -40px;
+      &.colab {
+        fill: $background;
+      }
+
+      &.fast-paced {
+        fill: $blood-red;
+        top: 0;
+      }
+
+      &.oneup {
+        top: 30px;
+      }
+    }
+  }
+}
+
+/*********************************************
+* Coffee Cup
+*********************************************/
 
 .mug-wrap {
   padding-top: 50px;

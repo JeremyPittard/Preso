@@ -1,5 +1,5 @@
 fadeTopItems();
-firing();
+
 function fadeTopItems() {
   var Opaque = false;
   $(document).on("click", function() {

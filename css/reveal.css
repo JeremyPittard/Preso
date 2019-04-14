@@ -1696,12 +1696,23 @@ tr:not(.highlight-line) {
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
 
+/******************************************************************************************************
+ * My Styles
+ *****************************************************************************************************/
 /*********************************************
  * My Variables
  *********************************************/
 /*********************************************
    * My Styles
-   *********************************************/
+  *********************************************/
+pre {
+  background: #272822 !important; }
+  pre code {
+    overflow-y: visible !important; }
+
+.coffee {
+  color: #16c18f !important; }
+
 .twitter-wrap {
   position: absolute;
   display: -webkit-box;
@@ -1716,6 +1727,7 @@ tr:not(.highlight-line) {
   top: 15px;
   width: 95%;
   font-family: "Montserrat", Helvetica, sans-serif;
+  z-index: 999;
   font-size: 20px;
   color: white;
   margin: 0 20px;
@@ -1762,13 +1774,165 @@ tr:not(.highlight-line) {
   .jrdev-wrap.into-the-fade {
     opacity: 0.25; }
 
-.beer-and-pong img {
+.people-wrap {
+  padding-top: 50px; }
+  .people-wrap svg {
+    height: 120px;
+    width: 120px; }
+    .people-wrap svg.pink {
+      fill: #ff736a; }
+    .people-wrap svg.green {
+      fill: #16c18f; }
+    .people-wrap svg.yellow {
+      fill: #fbc02d; }
+    .people-wrap svg.red {
+      fill: #ff5252; }
+    .people-wrap svg.purple {
+      fill: #ea80fc; }
+
+.person h3 {
+  width: 100%;
+  text-align: left; }
+
+.person svg {
+  height: 200px;
+  width: 200px;
   position: absolute;
-  max-height: 400px !important; }
+  right: -100px;
+  top: -40px; }
+  .person svg.dev {
+    fill: #313340; }
+  .person svg.design {
+    fill: #aa2233; }
+  .person svg.a-ms {
+    fill: #fbc02d;
+    top: 0; }
+  .person svg.management {
+    fill: #eee; }
+  .person svg.ddm {
+    fill: #02097b;
+    top: 0; }
+  .person svg.bulby {
+    fill: #313340; }
 
-.beer-and-pong .pingpong {
-  left: 0; }
+.the-day svg {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: -100px;
+  top: -40px;
+  fill: #313340;
+  stroke: #16c18f; }
+  .the-day svg.red {
+    fill: #aa2233;
+    stroke: #4d9bb1; }
+  .the-day svg.yellow {
+    stroke: none;
+    fill: #fbc02d; }
+  .the-day svg.white {
+    stroke: #eee;
+    fill: #ff736a;
+    top: 30px; }
+  .the-day svg.blue {
+    stroke: none;
+    fill: #02097b; }
+  .the-day svg.afternoon {
+    stroke: #313340;
+    fill: #636f57;
+    -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1); }
+  .the-day svg .beer {
+    fill: #313340;
+    stroke: none;
+    top: 30px; }
 
+.the-day .circle-wrap {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%; }
+  .the-day .circle-wrap .day-circle {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 0 10px; }
+    .the-day .circle-wrap .day-circle.red {
+      background: #ff5252; }
+    .the-day .circle-wrap .day-circle.yellow {
+      background: #fbc02d; }
+    .the-day .circle-wrap .day-circle.green {
+      background: #16c18f; }
+
+.the-day h3,
+.the-day h2,
+.the-day p {
+  text-align: left; }
+  .the-day h3.center,
+  .the-day h2.center,
+  .the-day p.center {
+    text-align: center; }
+
+.the-wrap .wrap-title {
+  margin-bottom: 50px; }
+
+.the-wrap .mug {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background: #16c18f;
+  border: 10px solid white;
+  border-radius: 0 0 15% 15%;
+  display: inline-block; }
+  .the-wrap .mug:after {
+    content: "";
+    height: 50%;
+    width: 100%;
+    border-radius: 0 15% 15% 0;
+    background: transparent;
+    border: 10px solid white;
+    position: absolute;
+    right: -50px;
+    z-index: -1; }
+
+.the-wrap .wrap-person {
+  height: 120px;
+  width: 120px;
+  fill: #fbc02d;
+  margin: 0 50px; }
+
+.the-wrap .day-circle {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background: #ff5252;
+  display: inline-block; }
+
+.the-wrap .wrap h3 {
+  width: 100%;
+  text-align: left; }
+
+.the-wrap .wrap svg {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: -100px;
+  top: -40px; }
+  .the-wrap .wrap svg.colab {
+    fill: #313340; }
+  .the-wrap .wrap svg.fast-paced {
+    fill: #aa2233;
+    top: 0; }
+  .the-wrap .wrap svg.oneup {
+    top: 30px; }
+
+/*********************************************
+* Coffee Cup
+*********************************************/
 .mug-wrap {
   padding-top: 50px;
   position: relative; }
