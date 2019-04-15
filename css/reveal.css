@@ -1930,6 +1930,9 @@ pre {
   .the-wrap .wrap svg.oneup {
     top: 30px; }
 
+.phone-image {
+  max-height: 400px !important; }
+
 /*********************************************
 * Coffee Cup
 *********************************************/
